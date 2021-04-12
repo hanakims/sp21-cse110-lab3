@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hana's Journal</title>
+        <link href="media/favicon.png" rel="icon" />
+    </head>
+    <body>
+        <header>
+            <h1>Things that make me Happy - Lab 2</h1>
+            <p>By Hana Kim</p>
+        </header>
+        <nav id="todoTabs">
+            <a href="#today">Today</a>
+            <a href="#yest">Yesterday</a>
+            <a href="#dbyest">Day Before Yesterday</a>
+        </nav>
+        <main>
+            <section id="today"> 
+                <h2>Today</h2>
+                <p>
+                    Moon Sujin(문수진) _ The Moon(저 달) 
+                    (Feat. TAEIL(태일) of NCT) Live Clip
+                </p>
+                <video width="300" height="300" controls>
+                    <source src="media/moon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div>
+                    <h3>To-Do</h3>
+                    <ol>
+                        <li>finish this lab</li>
+                        <li>take review quiz</li>
+                        <li>meeting</li>
+                        <li>email thank yous</li>
+                        <li>organize!! please!!</li>
+                        <li><a href="https://youtu.be/r4-Hn6N2rCQ">watch this again</a></li>
+                    </ol>
+                </div>
+            </section>
+            <hr/>
+            <section id="yest"> 
+                <h2>Yesterday</h2>
+                <details>
+                    <summary>My favorite bands</summary>
+                    <img src="media/day6.jpeg" alt="Day6" width="500" height="333">
+                    <img src="media/lucy.jpeg" alt="Lucy" width="450" height="300">
+                  </details>
+                <h3>Things I watched</h3>
+                <ul>
+                    <li>ep 7 of Superband (rewatch)</li>
+                    <li>ep 1 + 2 of Haikyuu (rewatch)</li>
+                    <li><i>Minari</i></li>
+                </ul>
+            </section>
+            <hr/>
+            <section id="dbyest"> 
+                <h2>Day Before Yesterday</h2>
+                <p>
+                    This was.. Friday? Yeah <strong>Friday!</strong> Uhm I slept in, 
+                    ate bok choy for lunch, got dinner with friends, 
+                    did not sleep <b>hardly</b> enough.
+                    <br>
+                    I <em>think</em> I was in a good mood this day but honestly I don't 
+                    remember nearly enough which is kinda worrying but I guess 
+                    that also meant nothing bad happened. 
+                    <br>
+                    Watch <span>Superband</span>. 👇🏼
+                </p>
+                <audio controls>
+                    <source src="media/holdBack.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                  </audio>
+            </section>
+            <form>
+                <fieldset>
+                    <legend>Add Entry: </legend>
+                    <label>Title</label>
+                    <input type="text" name="title"><br>
+                    <label>Entry</label>
+                    <textarea></textarea><br>
+                    <label>Mood</label>
+                    <select>
+                      <option>Happy</option>
+                      <option>Sad</option>
+                      <option>Tired</option>
+                    </select><br>
+                    <input type="checkbox" id="opt1" name="opt1" value="complete">
+                    <label for="opt1">finished the day</label><br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label>Rate the day: </label><br>
+                    <input type="radio" name="1" value="1">
+                    <label>1</label><br>
+                    <input type="radio" name="2" value="2">
+                    <label>2</label><br>
+                    <input type="radio" name="3" value="3">
+                    <label>3</label><br>
+                    <label>User</label>
+                    <input list="options" name="options" id="option">
+                    <datalist id="options">
+                      <option value="Hana">
+                      <option value="Other">
+                    </datalist>
+                    <button type="button">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            By Hana Kim
+        </footer>
+    </body>
+</html>
