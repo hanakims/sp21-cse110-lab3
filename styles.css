@@ -1,12 +1,26 @@
-body { 
+body {
     display: grid; /* splits up header, body, footer */
-    grid-row-gap: 50px;
-    grid-template-rows: 10% auto 5%;
+    grid-row-gap: 10px;
+    grid-template-rows: 8% auto 5%;
     align-items: start;
+    margin: 0;
 }
 
 header {
     grid-row-start: 1;
+    padding-top: 5mm;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+}
+
+header > h1 {
+    color: rgb(82, 143, 255);
+}
+
+header p {
+    color: #474747;
+    position: relative;
+    left: 5px;
 }
 
 main {
@@ -25,4 +39,30 @@ footer {
 
 #today {
     flex-grow: 2;
+}
+
+#todoTabs {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color : rgb(255, 255, 255);
+    padding: 3ex 1ex;
+}
+
+#todoTabs a {
+    color: #474747;
+    text-align: center;
+    padding: 1em 0.8em;
+    text-decoration: none;
+    font-size: 17px;
+ }
+
+#todoTabs a:hover {
+    background-color: rgb(255, 240, 228);
+    color: black;
+}
+
+main + footer {
+    color: #474747;
+    padding: 1cm;
 }
