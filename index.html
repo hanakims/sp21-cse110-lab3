@@ -5,73 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hana's Journal</title>
         <link href="media/favicon.png" rel="icon" />
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+              background-color: rgb(255, 249, 244);
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>Things that make me Happy - Lab 2</h1>
             <p>By Hana Kim</p>
+            <nav id="todoTabs">
+                <a href="#today">Today</a>
+                <a href="#yest">Yesterday</a>
+                <a href="#dbyest">Day Before Yesterday</a>
+            </nav>
         </header>
-        <nav id="todoTabs">
-            <a href="#today">Today</a>
-            <a href="#yest">Yesterday</a>
-            <a href="#dbyest">Day Before Yesterday</a>
-        </nav>
         <main>
-            <section id="today"> 
-                <h2>Today</h2>
-                <p>
-                    Moon Sujin(문수진) _ The Moon(저 달) 
-                    (Feat. TAEIL(태일) of NCT) Live Clip
-                </p>
-                <video width="300" height="300" controls>
-                    <source src="media/moon.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div>
-                    <h3>To-Do</h3>
-                    <ol>
-                        <li>finish this lab</li>
-                        <li>take review quiz</li>
-                        <li>meeting</li>
-                        <li>email thank yous</li>
-                        <li>organize!! please!!</li>
-                        <li><a href="https://youtu.be/r4-Hn6N2rCQ">watch this again</a></li>
-                    </ol>
-                </div>
-            </section>
-            <hr/>
-            <section id="yest"> 
-                <h2>Yesterday</h2>
-                <details>
-                    <summary>My favorite bands</summary>
-                    <img src="media/day6.jpeg" alt="Day6" width="500" height="333">
-                    <img src="media/lucy.jpeg" alt="Lucy" width="450" height="300">
-                  </details>
-                <h3>Things I watched</h3>
-                <ul>
-                    <li>ep 7 of Superband (rewatch)</li>
-                    <li>ep 1 + 2 of Haikyuu (rewatch)</li>
-                    <li><i>Minari</i></li>
-                </ul>
-            </section>
-            <hr/>
-            <section id="dbyest"> 
-                <h2>Day Before Yesterday</h2>
-                <p>
-                    This was.. Friday? Yeah <strong>Friday!</strong> Uhm I slept in, 
-                    ate bok choy for lunch, got dinner with friends, 
-                    did not sleep <b>hardly</b> enough.
-                    <br>
-                    I <em>think</em> I was in a good mood this day but honestly I don't 
-                    remember nearly enough which is kinda worrying but I guess 
-                    that also meant nothing bad happened. 
-                    <br>
-                    Watch <span>Superband</span>. 👇🏼
-                </p>
-                <audio controls>
-                    <source src="media/holdBack.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                  </audio>
+            <section id="entries">
+                <section class="entry" id="today"> 
+                    <h2>Today</h2>
+                    <p>
+                        Moon Sujin(문수진) _ The Moon(저 달) 
+                        (Feat. TAEIL(태일) of NCT) Live Clip
+                    </p>
+                    <video width="300" height="300" controls>
+                        <source src="media/moon.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div>
+                        <h3>To-Do</h3>
+                        <ol>
+                            <li>finish this lab</li>
+                            <li>take review quiz</li>
+                            <li>meeting</li>
+                            <li>email thank yous</li>
+                            <li>organize!! please!!</li>
+                            <li><a href="https://youtu.be/r4-Hn6N2rCQ">watch this again</a></li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="entry" id="yest"> 
+                    <h2>Yesterday</h2>
+                    <details>
+                        <summary>My favorite bands</summary>
+                        <img src="media/day6.jpeg" alt="Day6" width="500" height="333">
+                        <img src="media/lucy.jpeg" alt="Lucy" width="450" height="300">
+                    </details>
+                    <h3>Things I watched</h3>
+                    <ul>
+                        <li>ep 7 of Superband (rewatch)</li>
+                        <li>ep 1 + 2 of Haikyuu (rewatch)</li>
+                        <li><i>Minari</i></li>
+                    </ul>
+                </section>
+                <section class="entry" id="dbyest"> 
+                    <h2>Day Before Yesterday</h2>
+                    <p>
+                        This was.. Friday? Yeah <strong>Friday!</strong> Uhm I slept in, 
+                        ate bok choy for lunch, got dinner with friends, 
+                        did not sleep <b>hardly</b> enough.
+                        <br>
+                        I <em>think</em> I was in a good mood this day but honestly I don't 
+                        remember nearly enough which is kinda worrying but I guess 
+                        that also meant nothing bad happened. 
+                        <br>
+                        Watch <span>Superband</span>. 👇🏼
+                    </p>
+                    <audio controls>
+                        <source src="media/holdBack.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </section>
             </section>
             <form>
                 <fieldset>
@@ -107,7 +113,7 @@
                 </fieldset>
             </form>
         </main>
-        <footer>
+        <footer style="text-align:center;">
             By Hana Kim
         </footer>
     </body>
