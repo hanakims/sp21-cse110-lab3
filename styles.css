@@ -131,3 +131,41 @@ a {
         min-width: 200px;
     }
 }
+
+form {
+    padding: 10px 50px 30px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+legend ~ label {
+    font-size: 20px;
+    padding: 5px;
+}
+
+form input {
+    margin: 10px;
+}
+
+button[class=submit] {
+    padding: 5px 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+background: #cacaca;
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
+  }
